@@ -40,7 +40,7 @@ I mapped the Soil type to ELU data to gather climate zone and geo zone.
 I converted aspect to a direction 
 I removed unnecessary soil types from the model when I determined they were unused by the model in order to decrease feature space. 
 
-The data was split into training, validation and training dataset. Training and validation were used to help with parameter tuning, and testing to gather the final results. 
+The data was split into training, validation and test datasets. Training and validation were used to help with parameter tuning, and testing to gather the final results. 
 
 
 ### Metrics 
@@ -59,7 +59,7 @@ Seaborn and matplotlib for eda graphs and displays
 ### Model
 Logistic regression, random forest and xgboost were fitted to the dataset, before setting on XGBoost as the slightly best model. Random Forest was very close, but slightly lower in all categories on the test set. 
 XGBoost performed w/ accuracy score of .8 before parameter turning, and .97 after parameter tuning. 
-I tuned the parameters by hand and using sklearns GridSearchCV. The ideal max depth was 11 with the models potentially using all features at all times - not bootstrapping. The number of iterators was chosen as 1000, since improvements on the validation set score were negligible higher than this, but the model was slow to train. 
+I tuned the parameters by hand and using sklearns GridSearchCV. The ideal max depth was 11 with the models potentially using all features at all times - not feature bagging. The number of iterators was chosen as 1000, since improvements on the validation set score were negligible higher than this, but the model was slow to train. 
 
 XGBoost feature importance was directly used to eliminate unnecessary features. The most important features were climate zone, and soil types which are very rocky and igneous, as well as elevation. This is expected, as Spruce Fir forests tend to thrive at higher elevations due to thin, spread out root systems. 
 
