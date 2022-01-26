@@ -105,37 +105,37 @@ The Spruce Fir forest is common in the Colorado Wilderness area. This is a very 
 
 ## Metrics for Models Graphed
 XGBoost performs slightly better than Random Forest. Logistic Regression trails by a lot. 
-![Alt text](/spruce-fir-forest-project/classificationgraphs/metrics_for_models.png?raw=true "Metrics per Model")
+![Alt text](/classificationgraphs/metrics_for_models.png?raw=true "Metrics per Model")
 
 ## Spruce Fir Forest histogram by Elevation 
 Orange represents the Spruce Fir Forest, our positive class. Blue all other forest types. This shows that Spruce Fir forests are typically found at higher elevations, but with a lot of crossover with other forest types. 
-![Alt text](/spruce-fir-forest-project/classificationgraphs/elevation_hist.png?raw=true "Elevation Breakdown")
+![Alt text](/classificationgraphs/elevation_hist.png?raw=true "Elevation Breakdown")
 
 
 ## Feature Importance Ranked 
 Numeric Soil types are replaced with their descriptions. 
 Top features include very stony soil types, subglacial climate zone, and igneous and metamorphic geo zone, as well as elevation. Least important are shade amounts, slope, and aspect. 
-![Alt text](/spruce-fir-forest-project/classificationgraphs/feature-importance.png?raw=true "Feature Importance")
+![Alt text](/classificationgraphs/feature-importance.png?raw=true "Feature Importance")
 
 ## Confusion Matrics for XGBoost Tested using the Test Set 
 Confusion matrix shows 2302 false positive observations, and 3033 false negative observations. This is a small percentage compared to 150K correctly predicted negative class, and 82K correctly predicted positive class observations, however many still be problematic for researchers. 
-![Alt text](/spruce-fir-forest-project/classificationgraphs/confusion.png?raw=true "XGBoost Confusion Matrix")
+![Alt text](/classificationgraphs/confusion.png?raw=true "XGBoost Confusion Matrix")
 
 ## Breakdown by Climate Zones
 Subalpine and alpine climate zone contain the larger percentage of Spruce Fir forests. 
 Subalpine is our most represented climate zone in the dataset. Alpine is highest elevation, subalpine similar to montane slightly below. 
-![Alt text](/spruce-fir-forest-project/classificationgraphs/climate-hist.png?raw=true "Climate Zones")
-![Alt text](/spruce-fir-forest-project/classificationgraphs/geo-elevation.png?raw=true "Climate Zones by Elevation")
+![Alt text](/classificationgraphs/climate-hist.png?raw=true "Climate Zones")
+![Alt text](/classificationgraphs/geo-elevation.png?raw=true "Climate Zones by Elevation")
 
 ## Geozone to Elevation
 Plotting boxplots of geozones to elevation by our target variable shows a lot of overlaying between positive and negative classes, however our positive classe tends to sit at slightly higher elevation than negative. The Igneous and metamorphic class has the largest spread of elevation values by both positive and negative classes. 
-![Alt text](/spruce-fir-forest-project/classificationgraphs/geozone-elevation.png?raw=true "Geozone to Elevation")
+![Alt text](/classificationgraphs/geozone-elevation.png?raw=true "Geozone to Elevation")
 
 
 
 ## Other Features Exploration
 Distributions between Spruce Fir (orange) and not (blue) overlay each other very well, therefore by themlselves are not great for predicting forest type. 
-![Alt text](/spruce-fir-forest-project/classificationgraphs/slope-hist.png?raw=true "Slopes")
+![Alt text](/classificationgraphs/slope-hist.png?raw=true "Slopes")
 
 
 
